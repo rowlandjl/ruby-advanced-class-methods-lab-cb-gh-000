@@ -51,9 +51,13 @@ class Song
         artist = data[0]
         name = data[1].replace(".mp3", "")
 
-      song = self.new
-      song.name = song
-
+        song = self.new
+        song.name = name
+        song.artist_name = artist
+        song.save
+        song
+      end
+      song
   end
 
   def self.create_from_filename
