@@ -49,9 +49,10 @@ class Song
       file = filename.collect do |row|
         data = row.split(" - ")
         artist = data[0]
-        song = data[1].replace(".mp3", "")
+        name = data[1].replace(".mp3", "")
 
-      
+      song = self.new
+      song.name = song
 
   end
 
