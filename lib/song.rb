@@ -34,6 +34,8 @@ class Song
   end
 
   def self.find_or_create_by_name
+    song = self.all.find { |song| song.name == name }
+    song
   end
 
   def self.alphabetical
